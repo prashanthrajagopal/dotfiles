@@ -58,7 +58,7 @@
   upm = !git fetch upstream && git merge upstream/master
 
   # least used
-  br = branch -a
+  br = branch
   s = status -s -u
   cl = log --stat -C -2
   c = commit
@@ -73,7 +73,7 @@
   pl = pull
   lp = log -p
   lod = log --oneline --decorate
-  lg = log --graph
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   lpo = log --pretty=oneline --abbrev-commit --graph --decorate --all
   l1 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   l2 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
